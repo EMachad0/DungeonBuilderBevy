@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" width="5" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="4" nextobjectid="1">
+ <tileset firstgid="1" name="dungeon1_grey_floor" tilewidth="16" tileheight="16" tilecount="96" columns="12">
+  <image source="../../textures/tilemap/dungeon1/dungeon1_grey_floor.png" width="192" height="128"/>
+ </tileset>
+ <tileset firstgid="97" name="dungeon1_tile_shading_tilesheet" tilewidth="16" tileheight="16" tilecount="25" columns="5">
+  <image source="../../textures/tilemap/dungeon1/dungeon1_tile_shading.png" width="80" height="80"/>
+ </tileset>
+ <tileset firstgid="122" name="dungeon1_walls_pit_tilesheet" tilewidth="16" tileheight="16" tilecount="35" columns="5">
+  <image source="../../textures/tilemap/dungeon1/dungeon1_walls_pit.png" width="80" height="112"/>
+ </tileset>
+ <layer id="1" name="Ground" width="5" height="10">
+  <data encoding="csv">
+0,61,56,30,0,
+0,4,16,40,0,
+0,91,44,77,0,
+0,56,56,56,0,
+0,62,86,25,0,
+0,31,63,92,0,
+0,1,2,17,0,
+0,62,27,27,0,
+0,26,29,16,0,
+0,88,4,79,0
+</data>
+ </layer>
+ <layer id="2" name="Wall" width="5" height="10">
+  <data encoding="csv">
+147,0,0,0,131,
+132,0,0,0,131,
+147,0,0,0,151,
+142,0,0,0,131,
+127,0,0,0,141,
+147,0,0,0,136,
+142,0,0,0,136,
+142,0,0,0,151,
+137,0,0,0,146,
+137,0,0,0,136
+</data>
+ </layer>
+ <layer id="3" name="Decoration" width="5" height="10">
+  <data encoding="csv">
+0,1610612839,0,3758096487,0,
+0,1610612840,0,3758096489,0,
+0,1610612841,0,3758096489,0,
+0,1610612839,0,3758096487,0,
+0,1610612841,0,3758096488,0,
+0,1610612840,0,3758096487,0,
+0,1610612841,0,3758096487,0,
+0,1610612839,0,3758096487,0,
+0,1610612839,0,3758096489,0,
+0,1610612840,0,3758096487,0
+</data>
+ </layer>
+</map>

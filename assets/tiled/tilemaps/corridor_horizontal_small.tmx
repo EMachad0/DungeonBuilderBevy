@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" width="10" height="8" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="1">
+ <tileset firstgid="1" name="dungeon1_walls_pit_tilesheet" tilewidth="16" tileheight="16" tilecount="35" columns="5">
+  <image source="../../textures/tilemap/dungeon1/dungeon1_walls_pit.png" width="80" height="112"/>
+ </tileset>
+ <tileset firstgid="36" name="dungeon1_walls_tilesheet" tilewidth="16" tileheight="16" tilecount="65" columns="13">
+  <image source="../../textures/tilemap/dungeon1/dungeon1_walls.png" width="208" height="80"/>
+ </tileset>
+ <tileset firstgid="101" name="dungeon1_grey_floor" tilewidth="16" tileheight="16" tilecount="96" columns="12">
+  <image source="../../textures/tilemap/dungeon1/dungeon1_grey_floor.png" width="192" height="128"/>
+ </tileset>
+ <tileset firstgid="197" name="dungeon1_tile_shading_tilesheet" tilewidth="16" tileheight="16" tilecount="25" columns="5">
+  <image source="../../textures/tilemap/dungeon1/dungeon1_tile_shading.png" width="80" height="80"/>
+ </tileset>
+ <tileset firstgid="222" source="../tilesheets/dungeon1_tile_shading_tilesheet.tsx"/>
+ <tileset firstgid="247" source="../tilesheets/dungeon1_walls_pit_tilesheet.tsx"/>
+ <layer id="1" name="Ground" width="10" height="8">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+132,144,114,186,120,162,176,162,162,168,
+107,140,175,180,137,163,191,137,177,127,
+164,128,102,132,106,105,126,179,114,178,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="3" name="Wall" width="10" height="8">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="2" name="Front" width="10" height="8">
+  <data encoding="csv">
+38,37,38,38,39,37,38,40,39,39,
+52,52,54,53,51,50,50,54,53,51,
+65,65,66,66,64,64,65,64,64,63,
+77,77,79,79,80,79,76,78,77,77,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+279,278,280,280,278,278,279,278,278,278
+</data>
+ </layer>
+ <layer id="4" name="Decoration" width="10" height="8">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+224,225,229,228,230,230,228,230,229,228,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+</map>

@@ -2,6 +2,7 @@ use crate::actions::Actions;
 use crate::loading::TextureAssets;
 use crate::GameState;
 use bevy::prelude::*;
+use bevy::sprite::Anchor;
 
 pub struct PlayerPlugin;
 
@@ -18,13 +19,32 @@ impl Plugin for PlayerPlugin {
 }
 
 fn spawn_player(mut commands: Commands, textures: Res<TextureAssets>) {
+    let size = Vec2::new(16., 32.);
     commands
         .spawn(SpriteBundle {
+            sprite: Sprite {
+                color: Color::rgba(1., 1., 1., 0.5),
+                custom_size: Some(size),
+                anchor: Anchor::BottomLeft,
+                ..Default::default()
+            },
             texture: textures.texture_bevy.clone(),
-            transform: Transform::from_translation(Vec3::new(0., 0., 1.)),
+            transform: Transform::from_xyz(0., 0., 10.),
             ..Default::default()
         })
         .insert(Player);
+    commands
+        .spawn(SpriteBundle {
+            sprite: Sprite {
+                color: Color::rgba(1., 1., 1., 0.8),
+                custom_size: Some(Vec2::new(32., 32.)),
+                anchor: Anchor::BottomLeft,
+                ..Default::default()
+            },
+            texture: textures.texture_bevy.clone(),
+            transform: Transform::from_translation(Vec3::new(0., 0., 10.)),
+            ..Default::default()
+        });
 }
 
 fn move_player(
